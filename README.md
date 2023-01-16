@@ -23,4 +23,20 @@ That's it? So just collect user's inputs within an object.
 
 This serves to get a random element from an array. Ok I need an array and generate a random index that matches an element of the array and return the value
 
-### 
+### `generatePassword()`
+
+…how? It seems like it needs to the two aforementioned functions.
+
+Ok I need to create an empty array for the password…
+
+obviously we would need to ask the user how long password he wants and what kind of character types he wants.
+
+we then collect groups of these characters and put them in a different array
+
+then we pick them randomly and put them in the password array.
+
+And we mix them up so it's not in the order
+
+And we turn it into a string…
+
+Present it on HTML.

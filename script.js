@@ -92,6 +92,10 @@ var upperCasedCharacters = [
 function getPasswordOptions() {
   // Prompts the user for the desired password length, which must be between 10 and 64 characters.
   let length = prompt("How many characters would you like your password to be? (between 10 and 64)");
+  while (length < 10 || length > 64) {
+    alert("Password length must be between 10 and 64 characters. Please try again.");
+    length = prompt("How many characters would you like your password to be? (between 10 and 64)");
+  }
   // Prompts the user to confirm the inclusion of lowercase characters, uppercase characters, numeric characters, and special characters.
   let specialChar = confirm("Click OK to include special characters.");
   let numericChar = confirm("Click OK to include numeric characters.");

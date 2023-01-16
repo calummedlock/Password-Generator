@@ -19,3 +19,8 @@ I have to think about character types…
 
 That's it? So just collect user's inputs within an object.
 
+### `getRandom(arr)`
+
+This serves to get a random element from an array. Ok I need an array and generate a random index that matches an element of the array and return the value
+
+### 

@@ -98,7 +98,13 @@ function getPasswordOptions() {
   let lowerChar = confirm("Click OK to include lowercase characters.");
   let upperChar = confirm("Click OK to include uppercase characters.");
   // Make sure at least one character type is selected
-  
+  while (!specialChar && !numericChar && !lowerChar && !upperChar) {
+    alert("You must select at least one character type. Please try again.");
+    specialChar = confirm("Click OK to include special characters.");
+    numericChar = confirm("Click OK to include numeric characters.");
+    lowerChar = confirm("Click OK to include lowercase characters.");
+    upperChar = confirm("Click OK to include uppercase characters.");
+  }
 }
 
 // Function for getting a random element from an array

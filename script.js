@@ -90,17 +90,21 @@ var upperCasedCharacters = [
 
 // Function to prompt user for password options
 function getPasswordOptions() {
-
+  //The function prompts the user for the desired password length, which must be between 10 and 64 characters.
+  let length = prompt("How many characters would you like your password to be? (between 10 and 64)");
 }
 
 // Function for getting a random element from an array
 function getRandom(arr) {
-
+  
 }
 
 // Function to generate password with user input
 function generatePassword() {
-
+  // Creates an empty array for the password
+  let result = [];
+  // Calls the `getPasswordOptions()` function to get the user's desired options
+  let options = getPasswordOptions();
 }
 
 // Get references to the #generate element

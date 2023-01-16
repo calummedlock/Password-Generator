@@ -90,8 +90,15 @@ var upperCasedCharacters = [
 
 // Function to prompt user for password options
 function getPasswordOptions() {
-  //The function prompts the user for the desired password length, which must be between 10 and 64 characters.
+  // Prompts the user for the desired password length, which must be between 10 and 64 characters.
   let length = prompt("How many characters would you like your password to be? (between 10 and 64)");
+  // Prompts the user to confirm the inclusion of lowercase characters, uppercase characters, numeric characters, and special characters.
+  let specialChar = confirm("Click OK to include special characters.");
+  let numericChar = confirm("Click OK to include numeric characters.");
+  let lowerChar = confirm("Click OK to include lowercase characters.");
+  let upperChar = confirm("Click OK to include uppercase characters.");
+  // Make sure at least one character type is selected
+  
 }
 
 // Function for getting a random element from an array

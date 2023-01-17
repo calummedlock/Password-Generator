@@ -132,19 +132,19 @@ function generatePassword() {
   // Calls the `getPasswordOptions()` function to get the user's desired options
   let options = getPasswordOptions();
   // Collects groups of characters based on the user's input
-  let charBox = []; // this is a box of randomly chosen characters
-  // puts random characters into charBox
+  let charBox = []; // this is a box of all characters matching user's options
+  // puts all chosen characters into charBox
   if (options.specialChar) {
-    charBox.push(getRandom(specialCharacters));
+    charBox = charBox.concat(specialCharacters);
   }
   if (options.numericChar) {
-    charBox.push(getRandom(numericCharacters));
+    charBox = charBox.concat(numericCharacters);
   }
   if (options.lowerChar) {
-    charBox.push(getRandom(lowerCasedCharacters));
+    charBox = charBox.concat(lowerCasedCharacters);
   }
   if (options.upperChar) {
-    charBox.push(getRandom(upperCasedCharacters));
+    charBox = charBox.concat(upperCasedCharacters);
   }
 
   let finalPassword = charBox.join('');

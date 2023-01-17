@@ -10,7 +10,7 @@ A password generator app that allows the user to create a random password based 
 
 ## Deployment
 
-The app is deployed on GitHub pages: [https://calummedlock.github.io/password-generator/](https://calummedlock.github.io/password-generator/)
+The app is deployed on GitHub pages: [Visit the Page](https://calummedlock.github.io/Password-Generator/)
 
 ## Licence
 

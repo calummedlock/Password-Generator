@@ -132,7 +132,25 @@ function generatePassword() {
   // Calls the `getPasswordOptions()` function to get the user's desired options
   let options = getPasswordOptions();
   // Collects groups of characters based on the user's input
+  let charBox = []; // this is a box of randomly chosen characters
+  // puts random characters into charBox
+  if (options.specialChar) {
+    charBox.push(getRandom(specialCharacters));
+  }
+  if (options.numericChar) {
+    charBox.push(getRandom(numericCharacters));
+  }
+  if (options.lowerChar) {
+    charBox.push(getRandom(lowerCasedCharacters));
+  }
+  if (options.upperChar) {
+    charBox.push(getRandom(upperCasedCharacters));
+  }
 
+  let finalPassword = charBox.join('');
+
+  return finalPassword
+  
 }
 
 // Get references to the #generate element
@@ -142,6 +160,7 @@ var generateBtn = document.querySelector('#generate');
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector('#password');
+
 
   passwordText.value = password;
 }

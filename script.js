@@ -146,8 +146,12 @@ function generatePassword() {
   if (options.upperChar) {
     charBox = charBox.concat(upperCasedCharacters);
   }
-
-  let finalPassword = charBox.join('');
+  // generates an array for random password
+  for (var i = 0; i < options.length; i++) {
+    result.push(getRandom(charBox));
+  }
+  // turns the array into a string
+  let finalPassword = result.join('');
 
   return finalPassword
   

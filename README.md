@@ -1,42 +1,21 @@
-# Password-Generator
+# Password Generator
 
-## What I need to do…
+A password generator app that allows the user to create a random password based on their selected criteria.
 
-basically write code for these three functions `getPasswordOptions()`, `getRandom(arr)`, and `generatePassword()`
+## Features
 
-In order to get started I need to make psuedocode first…
+- Prompts user for password length and character types (lowercase, uppercase, numeric, special characters)
+- Validates user input
+- Generates a random password using the user's criteria
 
-### `getPasswordOptions()`
+## Deployment
 
-I need to prompt the user how many characters he wants between 10 and 64 characters in length
+The app is deployed on GitHub pages: [https://calummedlock.github.io/password-generator/](https://calummedlock.github.io/password-generator/)
 
-I have to think about character types… 
+## Licence
 
-- Lowercase
-- Uppercase
-- Numeric
-- Special characters ($@%&*, etc.)
+The project is open-sourced software licensed under the [MIT License](/LICENSE)
 
-That's it? So just collect user's inputs within an object.
+## Credits
 
-### `getRandom(arr)`
-
-This serves to get a random element from an array. Ok I need an array and generate a random index that matches an element of the array and return the value
-
-### `generatePassword()`
-
-…how? It seems like it needs to the two aforementioned functions.
-
-Ok I need to create an empty array for the password…
-
-obviously we would need to ask the user how long password he wants and what kind of character types he wants.
-
-we then collect groups of these characters and put them in a different array
-
-then we pick them randomly and put them in the password array.
-
-And we mix them up so it's not in the order
-
-And we turn it into a string…
-
-Present it on HTML.
+N/A

@@ -109,6 +109,14 @@ function getPasswordOptions() {
     lowerChar = confirm("Click OK to include lowercase characters.");
     upperChar = confirm("Click OK to include uppercase characters.");
   }
+  // returns an object for `options` in `generatePassword()` so that it puts together the user's options.
+  return {
+    length: length,
+    specialChar: specialChar,
+    numericChar: numericChar,
+    lowerChar: lowerChar,
+    upperChar: upperChar
+  }
 }
 
 // Function for getting a random element from an array
@@ -123,6 +131,8 @@ function generatePassword() {
   let result = [];
   // Calls the `getPasswordOptions()` function to get the user's desired options
   let options = getPasswordOptions();
+  // Collects groups of characters based on the user's input
+
 }
 
 // Get references to the #generate element
